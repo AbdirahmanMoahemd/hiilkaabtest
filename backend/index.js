@@ -1,7 +1,7 @@
 import path from "path";
-import colors from "colors";
 import express from "express";
 import dotenv from "dotenv";
+import colors from 'colors'
 import morgan from "morgan";
 import connectDB from "./config/db2.js";
 import { errorHandler, notFound } from "./middlewares/errorMidlleware.js";
@@ -13,6 +13,7 @@ import uploadRoutes from './routes/uploadRoutes.js'
 import slidesRoutes from './routes/slidesRoutes.js'
 import settingsRoutes from './routes/settingsRoutes.js'
 import filterRoutes from './routes/filter.js'
+import topCategriesRoutes from './routes/topCategriesRoutes.js'
 
 
 
@@ -36,6 +37,7 @@ app.use('/api/upload', uploadRoutes)
 app.use('/api/slides', slidesRoutes)
 app.use('/api/settings', settingsRoutes); 
 app.use('/api/filter', filterRoutes); 
+app.use('/api/topCategories', topCategriesRoutes); 
 
 
 

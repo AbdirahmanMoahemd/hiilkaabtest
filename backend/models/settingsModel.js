@@ -9,25 +9,6 @@ const settingsSchema = mongoose.Schema({
         type: String,
         required: true,
     },
-    serviceTitle1: {
-        type: String,
-    },
-    
-    serviceDecs1:{
-        type: String,
-    },
-    serviceTitle2: {
-        type: String,
-    },
-    serviceDecs2:{
-        type: String,
-    },
-    serviceTitle3: {
-        type: String,
-    },
-    serviceDecs3:{
-        type: String,
-    },
     about: {
         type: String,
         required: true,

@@ -20,7 +20,7 @@ export const searchByQueryType = asyncHandler(async (req, res) => {
     }
 
     if (!products.length > 0) {
-      products = await Product.find({});
+      products =[];
     }
 
     res.json({ products });
